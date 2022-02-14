@@ -26,8 +26,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm i
-      working-directory: jodit-react
     - run: npm run build
-      working-directory: jodit-react
     - run: npm test
-      working-directory: jodit-react
