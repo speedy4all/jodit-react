@@ -26,6 +26,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: '**/package-lock.json'
     - run: npm i
+      working-directory: jodit-react
     - run: npm run build
+      working-directory: jodit-react
     - run: npm test
+      working-directory: jodit-react
