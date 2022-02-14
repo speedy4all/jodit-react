@@ -1,8 +1,12 @@
 # React Jodit WYSIWYG Editor
 
-[![npm](https://img.shields.io/npm/v/jodit-react.svg)](https://www.npmjs.com/package/jodit-react)
-[![npm](https://img.shields.io/npm/dm/jodit-react.svg)](https://www.npmjs.com/package/jodit-react)
-[![npm](https://img.shields.io/npm/l/jodit-react.svg)](https://www.npmjs.com/package/jodit-react)
+[![npm](https://img.shields.io/npm/v/@speedy4all/jodit-react.svg)](https://www.npmjs.com/package/@speedy4all/jodit-react)
+[![npm](https://img.shields.io/npm/dm/@speedy4all/jodit-react.svg)](https://www.npmjs.com/package/@speedy4all/jodit-react)
+[![npm](https://img.shields.io/npm/l/@speedy4all/jodit-react.svg)](https://www.npmjs.com/package/@speedy4all/jodit-react)
+
+## Fixed images in print preview
+
+- the page now waits for the images to load and only then the print is opened
 
 React wrapper for [Jodit](https://xdsoft.net/jodit/)
 
@@ -11,12 +15,12 @@ React wrapper for [Jodit](https://xdsoft.net/jodit/)
 ## Installation
 
 ```bash
-npm install jodit-react --save
+npm install @speedy4all/jodit-react --save
 ```
 
 ## Update editor version
 ```bash
-npm update jodit-react
+npm update @speedy4all/jodit-react
 ```
 
 ## Run demo
@@ -36,7 +40,7 @@ http://localhost:4000/
 
 ```jsx
 import React, {useState, useRef} from 'react';
-import JoditEditor from "jodit-react";
+import JoditEditor from "@speedy4all/jodit-react";
 
 const Example = ({}) => {
 	const editor = useRef(null)

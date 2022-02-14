@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { IJodit } from '@speedy4all/jodit/types/types';
 
-declare module 'jodit-react' {
+declare module '@speedy4all/jodit-react' {
 	export interface IJoditEditorProps {
 		value: string,
 		config?: IJodit['options'];
